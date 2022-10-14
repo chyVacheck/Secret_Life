@@ -14,7 +14,7 @@ function Header() {
         <nav>
           <ul className='header__list'>
             <li className='header__element-list'>
-              <a className='header__link' href='#'>WOMAN</a>
+              <a className='header__link' href='#'>WOMEN</a>
             </li>
             <li className='header__element-list'>
               <a className='header__link' href='#'>BECOME A MODEL</a>
