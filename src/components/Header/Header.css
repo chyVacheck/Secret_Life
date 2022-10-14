@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #242424;
-  margin: 0 0 100px 0;
+  margin: 0;
 }
 
 .header__container {
@@ -54,12 +54,18 @@
   transform: scale(1.15);
 }
 
-.header__icon {
+.header__link_text {
+  margin: 0;
+  margin-block: 0;
+}
+
+.header__link_text:hover {
+  color: red;
+}
+
+.header__link_icon {
   width: 30px;
   height: 30px;
   transition: 0.5s;
 }
 
-.header__icon:hover {
-  transform: scale(1.2);
-}

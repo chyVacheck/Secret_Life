@@ -3,7 +3,12 @@ import './Header.css';
 import instagram from './../../images/icon/instagram.svg';
 import telegram from './../../images/icon/telegram.svg';
 
-function Header() {
+function Header({ objChangeContent }) {
+
+  const women = objChangeContent.women;
+  const become_a_model = objChangeContent.become_a_model;
+  const contacts = objChangeContent.contacts;
+
   return (
     <header className='header'>
       <section className='header__container'>
@@ -14,22 +19,28 @@ function Header() {
         <nav>
           <ul className='header__list'>
             <li className='header__element-list'>
-              <a className='header__link' href='#'>WOMEN</a>
+              <a onClick={women} className='header__link' href='#'>
+                <p className='header__link_text'>WOMEN</p>
+              </a>
             </li>
             <li className='header__element-list'>
-              <a className='header__link' href='#'>BECOME A MODEL</a>
+              <a onClick={become_a_model} className='header__link' href='#'>
+                <p className='header__link_text'>BECOME A MODEL</p>
+              </a>
             </li>
             <li className='header__element-list'>
-              <a className='header__link' href='#'>CONTACTS</a>
+              <a onClick={contacts} className='header__link' href='#'>
+                <p className='header__link_text'>CONTACTS</p>
+              </a>
             </li>
             <li className='header__element-list'>
               <a className='header__link' href='https://www.instagram.com/kuchuruk_tatyana/'>
-                <img className='header__icon' src={instagram} ></img>
+                <img className='header__link_icon' src={instagram} ></img>
               </a>
             </li>
             <li className='header__element-list'>
               <a className='header__link' href='#'>
-                <img className='header__icon' src={telegram} ></img>
+                <img className='header__link_icon' src={telegram} ></img>
               </a>
             </li>
           </ul>
