@@ -1,6 +1,6 @@
 .header {
   height: 90px;
-  padding: 0 25px;
+  padding: 0 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1020px;
 }
 
 .header__logo {
@@ -29,7 +28,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  column-gap: 25px;
+  column-gap: 35px;
 }
 
 .header__element-list {
@@ -69,3 +68,24 @@
   transition: 0.5s;
 }
 
+.header__link_icon:hover {
+  animation: .5s linear 0s normal none 1 running rotation;
+  -webkit-animation: .5s linear 0s normal none 1 running rotation;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
