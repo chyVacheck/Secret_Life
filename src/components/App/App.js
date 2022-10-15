@@ -50,9 +50,7 @@ function App() {
           {/* Contacts */}
           <Route path='/contacts'
             element={
-              <Page title={'CONTACTS'} >
-                <Contacts />
-              </Page>
+              <Contacts />
             }
           />
 
