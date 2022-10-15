@@ -1,12 +1,14 @@
 
 import './Link.css';
 
-function Link({ src, children }) {
+function Link({ src, children, className = '' }) {
+
+  const classStr = 'link' + ' link_black' + (className === '' ? '' : ' ' + className);
 
   return (
     <a
       target="_blank"
-      className="link link_black"
+      className={classStr}
       href={src}
     >
       {children}

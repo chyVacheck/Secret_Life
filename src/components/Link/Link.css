@@ -4,7 +4,7 @@
 }
 
 .link:hover {
-  opacity: 0.5;
+  color: red;
 }
 
 .link_black {
