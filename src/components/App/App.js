@@ -32,9 +32,7 @@ function App() {
           {/* Women */}
           <Route path='/women'
             element={
-              <Page title={'WOMEN'} >
-                <Women />
-              </Page>
+              <Women />
             }
           />
 
