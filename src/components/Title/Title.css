@@ -1,0 +1,9 @@
+.title {
+  max-width: fit-content;
+  margin: 10px 0;
+
+  font-size: 50px;
+  font-weight: 400;
+  font-family: -apple-system, Ubuntu, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Cantarell, Helvetica Neue, sans-serif;
+}
