@@ -1,3 +1,21 @@
 .women {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.women__grid {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 35px;
+  display: grid;
+  gap: 20px;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, 20%);
+  grid-template-rows: auto;
+  justify-content: center;
+  line-height: 0;
 }
