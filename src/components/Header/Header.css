@@ -169,7 +169,11 @@
     display: none;
   }
   .header__element-list {
-    margin: 0 10px 0 0;
+    min-width: none;
+    margin: 0 8px 0 0;
+  }
+  .header__element-list:last-of-type {
+    margin: 0;
   }
   .header__social-network-list {
     display: none;
