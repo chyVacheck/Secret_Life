@@ -2,7 +2,8 @@
 import './Header.css';
 import instagram from './../../images/icon/instagram.svg';
 import telegram from './../../images/icon/telegram.svg';
-
+import React from 'react';
+import { NavLink } from "react-router-dom";
 
 function Header() {
 
@@ -19,21 +20,21 @@ function Header() {
           <ul className='header__list'>
             {/* WOMEN */}
             <li className='header__element-list'>
-              <a className='header__link' href='/women'>
+              <NavLink className='header__link' to='/women'>
                 <p className='header__link_text'>WOMEN</p>
-              </a>
+              </NavLink>
             </li>
             {/* BECOME A MODEL */}
             <li className='header__element-list'>
-              <a className='header__link' href='/become a model'>
+              <NavLink className='header__link' to='/become%20a%20model'>
                 <p className='header__link_text'>BECOME A MODEL</p>
-              </a>
+              </NavLink>
             </li>
             {/* CONTACTS */}
             <li className='header__element-list'>
-              <a className='header__link' href='/contacts'>
+              <NavLink className='header__link' to='/contacts'>
                 <p className='header__link_text'>CONTACTS</p>
-              </a>
+              </NavLink>
             </li>
           </ul>
 

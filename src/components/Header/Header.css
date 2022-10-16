@@ -61,6 +61,10 @@
   transition: 0.5s;
 }
 
+.header__link_active {
+  color: red;
+}
+
 .header__link:hover {
   transform: scale(1.15);
 }
@@ -82,8 +86,8 @@
 }
 
 .header__link_icon:hover {
-  animation: 0.5s linear 0s normal none 1 running rotation;
-  -webkit-animation: 0.5s linear 0s normal none 1 running rotation;
+  animation: 1.5s linear 0s normal none 1 running rotation;
+  -webkit-animation: 1.5s linear 0s normal none 1 running rotation;
 }
 
 .header__social-network-list {
@@ -103,13 +107,19 @@
   from {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 @-webkit-keyframes rotation {
   0% {
     transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(360deg);
@@ -144,14 +154,14 @@
   .header {
     padding: 0 1%;
   }
-  .header__container{
+  .header__container {
     justify-content: center;
   }
   .header__column {
     width: 100%;
     justify-content: center;
   }
-  .header__list{
+  .header__list {
     width: 100%;
     justify-content: space-between;
   }
