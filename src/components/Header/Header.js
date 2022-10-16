@@ -10,10 +10,12 @@ function Header() {
     <header className='header'>
       <section className='header__container'>
         {/* логотип */}
-        <img className='header__logo' alt='secret life' />
+        <div>
+          <img className='header__logo' alt='secret life' />
+        </div>
 
         {/* список страниц */}
-        <nav>
+        <nav className='header__column'>
           <ul className='header__list'>
             {/* WOMEN */}
             <li className='header__element-list'>
@@ -33,14 +35,17 @@ function Header() {
                 <p className='header__link_text'>CONTACTS</p>
               </a>
             </li>
+          </ul>
+
+          <ul className='header__social-network-list'>
             {/* instagram */}
-            <li className='header__element-list'>
+            <li className='header__social-network'>
               <a className='header__link' href='https://www.instagram.com/kuchuruk_tatyana/'>
                 <img className='header__link_icon' src={instagram} ></img>
               </a>
             </li>
             {/* telegram */}
-            <li className='header__element-list'>
+            <li className='header__social-network'>
               <a className='header__link' href='#'>
                 <img className='header__link_icon' src={telegram} ></img>
               </a>
