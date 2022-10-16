@@ -4,7 +4,7 @@ import Title from '../../components/Title/Title.js';
 import Link from '../../components/Link/Link';
 import './Contacts.css';
 
-const text = '( SEO and Director )';
+const text = '( CEO and Director )';
 
 function Contacts() {
   return (
