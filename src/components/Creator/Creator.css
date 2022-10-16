@@ -2,11 +2,12 @@
   margin: 0;
   font-weight: 300;
   color: #000;
+  font-size: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1152px) {
+@media screen and (min-width: 768px) and (max-width: 1052px) {
   .creator {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
@@ -18,6 +19,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 545px) {
   .creator {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
