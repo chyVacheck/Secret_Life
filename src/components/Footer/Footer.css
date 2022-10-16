@@ -1,5 +1,5 @@
 .footer {
-  padding: 0 35px;
+  padding: 0 8%;
   margin: 0;
   height: 80px;
   display: flex;
@@ -31,6 +31,7 @@
 
 .footer__list {
   height: 100%;
+  min-width: 100px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -79,4 +80,28 @@
 .footer__link_icon:hover {
   animation: 0.5s linear 0s normal none 1 running rotation;
   -webkit-animation: 0.5s linear 0s normal none 1 running rotation;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1052px) {
+  .footer {
+    padding: 0 7%;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 768px) {
+  .footer {
+    padding: 0 6%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 545px) {
+  .footer {
+    padding: 0 5%;
+  }
+  .footer__list {
+    column-gap: 10%;
+  }
+  .footer__container {
+    gap: 10px;
+  }
 }
