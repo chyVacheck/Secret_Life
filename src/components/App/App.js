@@ -11,25 +11,12 @@ import Women from '../../pages/Women/Women.js';
 import Woman from '../../pages/Woman/Woman.js';
 import Become_a_model from '../../pages/Become_a_model/Become_a_model.js';
 import Contacts from '../../pages/Contants/Contacts.js';
+import { ListOfWomen } from '../../utils/constants';
 
-import photo from '../../images/women/first/photo_10.jpg';
 
 function App() {
 
-  const [selectedWoman, setSelectedWoman] = React.useState({
-    mainPhoto: photo,
-    firstName: 'Ann',
-    secondName: 'Lorak',
-    age: 19,
-    height: 165,
-    weight: 42,
-    parameter: {
-      bust: 85,
-      waist: 63,
-      hips: 82,
-    },
-    nationality: 'Ukrainian'
-  });
+  const [selectedWoman, setSelectedWoman] = React.useState(ListOfWomen[0]);
 
   return (
     <>
@@ -40,9 +27,7 @@ function App() {
           {/* Home page */}
           <Route exact path='/'
             element={
-              <Page title={'Secret Life'}>
-                <Home />
-              </Page>
+              <Home />
             }
           />
 
