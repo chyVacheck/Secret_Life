@@ -16,7 +16,7 @@ function Contacts() {
       <section className='contacts__info'>
         {/* Татьяна */}
         <article className='contacts__column'>
-          <h2 className='contacts__title'>Татьяна Кучерук</h2>
+          <h2 className='contacts__title'>Tatyana Kucheruk</h2>
           <p className='contacts__text'>{text}</p>
           <div className='contacts__email'>
             <Link src='mailto:kuchuruk87@icloud.com' className='contacts__link'>
@@ -26,7 +26,7 @@ function Contacts() {
         </article>
         {/* Анна */}
         <article className='contacts__column'>
-          <h2 className='contacts__title'>Анна Подопригора</h2>
+          <h2 className='contacts__title'>Anna Podoprigora</h2>
           <p className='contacts__text'>{text}</p>
           <div className='contacts__email'>
             <Link src='mailto:apodoprigora@icloud.com' className='contacts__link'>
