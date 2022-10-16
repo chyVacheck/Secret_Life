@@ -5,7 +5,7 @@ import { ListOfWomen } from '../../utils/constants.js';
 import Title from '../../components/Title/Title.js';
 import Woman from '../../components/Woman/Woman.js';
 
-function Women() {
+function Women({ setSelectedWoman }) {
   return (
     <section className='women'>
       <Title>
@@ -16,7 +16,7 @@ function Women() {
         {ListOfWomen.map((item, index) => {
           return (
             <li key={index}>
-              <Woman woman={item}></Woman>
+              <Woman setSelectedWoman={setSelectedWoman} woman={item}></Woman>
             </li>
           )
         }

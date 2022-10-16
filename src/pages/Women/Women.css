@@ -19,3 +19,24 @@
   justify-content: center;
   line-height: 0;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1052px) {
+  .women__grid {
+    grid-template-columns: repeat(auto-fit, 30%);
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 768px) {
+  .women__grid {
+    grid-template-columns: repeat(auto-fit, 40%);
+    padding: 0 25px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 545px) {
+  .women__grid {
+    grid-template-columns: repeat(auto-fit, 45%);
+    padding: 0 10px;
+  }
+}
