@@ -10,16 +10,17 @@ export const ListOfWomen = [
   {
     mainPhoto: Luda_photos[0],
     firstName: 'Luda',
-    age: 25,
-    height: 170,
-    weight: 45,
+    age: 22,
+    height: 168,
+    weight: 47,
     parameter: {
       bust: 90,
-      waist: 60,
+      waist: 58,
       hips: 90,
     },
     photos: Luda_photos,
-    nationality: 'Ukrainian'
+    nationality: 'Ukrainian',
+    instagram: 'Livanishina'
   },
   {
     mainPhoto: Alina_photos[0],
@@ -33,7 +34,8 @@ export const ListOfWomen = [
       hips: 90,
     },
     photos: Alina_photos,
-    nationality: 'Ukrainian'
+    nationality: 'Ukrainian',
+    instagram: 'ahoshton.a'
   },
   {
     mainPhoto: Tomiris_photos[1],
@@ -63,7 +65,7 @@ export const ListOfWomen = [
     },
     photos: Nastya_photos,
     nationality: 'Polka',
-    instargam: 'nasti_k6'
+    instagram: 'nasti_k6'
   },
   {
     mainPhoto: Nastya_photos[1],
@@ -78,7 +80,7 @@ export const ListOfWomen = [
     },
     photos: Nastya_photos,
     nationality: 'Polka',
-    instargam: 'nasti_k6'
+    instagram: 'nasti_k6'
   },
   {
     mainPhoto: Nastya_photos[0],
@@ -93,6 +95,6 @@ export const ListOfWomen = [
     },
     photos: Nastya_photos,
     nationality: 'Polka',
-    instargam: 'nasti_k6'
+    instagram: 'nasti_k6'
   }
 ]
