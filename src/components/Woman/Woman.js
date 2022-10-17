@@ -16,8 +16,6 @@ function Woman({ woman, setSelectedWoman }) {
         <NavLink onClick={changeInfo} className='woman__link' to='/woman'>
           <img className='woman__main-photo' src={mainPhoto} />
         </NavLink>
-        {/* <ul className='woman__list'>
-        </ul> */}
       </div>
 
       <h4 className='woman__title'>
