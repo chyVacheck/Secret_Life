@@ -20,8 +20,12 @@
 }
 
 .header__logo {
-  height: 90px;
-  width: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img {
+  height: 85%;
   transition: 1s;
 }
 

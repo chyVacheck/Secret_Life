@@ -2,6 +2,7 @@
 import './Header.css';
 import instagram from './../../images/icon/instagram.svg';
 import telegram from './../../images/icon/telegram.svg';
+import logo from './../../images/icon/logo.svg';
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
@@ -11,9 +12,9 @@ function Header() {
     <header className='header'>
       <section className='header__container'>
         {/* логотип */}
-        <div>
-          <img className='header__logo' alt='secret life' />
-        </div>
+        <NavLink className='header__logo' to='/'>
+          <img className='header__logo-img' alt='secret life' src={logo} />
+        </NavLink>
 
         {/* список страниц */}
         <nav className='header__column'>
