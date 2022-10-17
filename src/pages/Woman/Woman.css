@@ -9,12 +9,14 @@
 .page-woman__title {
   text-transform: uppercase;
 }
+ 
 
 .page-woman__description {
   min-height: 52px;
   align-items: center;
   width: calc(100% - (2 * 14%));
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
   font-size: 18px;
@@ -26,6 +28,10 @@
 
 .page-woman__meaning {
   color: #000;
+}
+
+.page-woman__icon{
+  max-width: 25px;
 }
 
 .page-woman__photos {

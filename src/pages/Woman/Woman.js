@@ -1,13 +1,10 @@
 import './Woman.css';
 import React from "react";
-
 import Title from '../../components/Title/Title';
 
-import { ListOfWomen } from '../../utils/constants.js';
-
+import Icon from '../../images/icon/instagram_grey.svg';
 
 function Woman({ selectedWoman }) {
-  ListOfWomen.map(() => { });
 
   const name = selectedWoman.firstName;
   const age = selectedWoman.age;
@@ -64,8 +61,10 @@ function Woman({ selectedWoman }) {
         </div>
         {/* INSTAGRAM */}
         <div>
-          <span>instagram</span>
-          <span className='page-woman__meaning'>{instagram}</span>
+          <a target="_blank" className='page-woman__meaning'
+            href={`https://www.instagram.com/${instagram}/`}>
+            <img className='page-woman__icon' src={Icon} />
+          </a>
         </div>
         {/* SHOE:38 EYES:BROWN HAIR:BROWN */}
       </article>
