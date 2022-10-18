@@ -21,19 +21,19 @@ function Header() {
           <ul className='header__list'>
             {/* WOMEN */}
             <li className='header__element-list'>
-              <NavLink className='header__link' to='/women'>
+              <NavLink className='header__link' to={`/women`}>
                 <p className='header__link_text'>Women</p>
               </NavLink>
             </li>
             {/* CastingApplication */}
             <li className='header__element-list'>
-              <NavLink className='header__link' to='/CastingApplication'>
+              <a className='header__link' href={`/CastingApplication`}>
                 <p className='header__link_text'>Casting Application</p>
-              </NavLink>
+              </a>
             </li>
             {/* CONTACTS */}
             <li className='header__element-list'>
-              <NavLink className='header__link' to='/contacts'>
+              <NavLink className='header__link' to={`/contacts`}>
                 <p className='header__link_text'>Contacts</p>
               </NavLink>
             </li>
@@ -55,7 +55,7 @@ function Header() {
           </ul>
         </nav>
       </section>
-    </header>
+    </header >
   );
 }
 
