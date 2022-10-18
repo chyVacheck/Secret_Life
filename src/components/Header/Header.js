@@ -22,19 +22,19 @@ function Header() {
             {/* WOMEN */}
             <li className='header__element-list'>
               <NavLink className='header__link' to='/women'>
-                <p className='header__link_text'>WOMEN</p>
+                <p className='header__link_text'>Women</p>
               </NavLink>
             </li>
-            {/* BECOME A MODEL */}
+            {/* CastingApplication */}
             <li className='header__element-list'>
-              <NavLink className='header__link' to='/become%20a%20model'>
-                <p className='header__link_text'>BECOME A MODEL</p>
+              <NavLink className='header__link' to='/CastingApplication'>
+                <p className='header__link_text'>Casting Application</p>
               </NavLink>
             </li>
             {/* CONTACTS */}
             <li className='header__element-list'>
               <NavLink className='header__link' to='/contacts'>
-                <p className='header__link_text'>CONTACTS</p>
+                <p className='header__link_text'>Contacts</p>
               </NavLink>
             </li>
           </ul>
