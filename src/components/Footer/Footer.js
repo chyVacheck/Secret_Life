@@ -4,7 +4,7 @@ import telegram from './../../images/icon/telegram.svg';
 import Creator from './../../components/Creator/Creator.js';
 
 const currentData = new Date().getFullYear();
-const YEAR_OF_SITE_CREATION = 2020;
+const YEAR_OF_SITE_CREATION = 2022;
 let dateForFooter = YEAR_OF_SITE_CREATION.toString();
 
 if (YEAR_OF_SITE_CREATION < currentData) {
