@@ -1,6 +1,5 @@
 
 import Header from '../Header/Header.js';   // шапка
-import Page from '../Page/Page.js';         // основная часть
 import Footer from '../Footer/Footer.js';   // подвал
 import React from 'react';
 
@@ -13,9 +12,7 @@ import CastingApplication from '../../pages/CastingApplication/CastingApplicatio
 import Contacts from '../../pages/Contants/Contacts.js';
 import { ListOfWomen } from '../../utils/constants';
 
-
 function App() {
-
   const [selectedWoman, setSelectedWoman] = React.useState(ListOfWomen[0]);
 
   return (
@@ -25,48 +22,46 @@ function App() {
         <Routes>
 
           {/* Home page */}
-          <Route exact path='/'
+          <Route exact path={'/'}
             element={
               <Home />
             }
           />
 
           {/* Women */}
-          <Route exact path='/women'
+          <Route path={'/women'}
             element={
               <Women setSelectedWoman={setSelectedWoman} />
             }
           />
 
           {/* CastingApplication */}
-          <Route exact path='/CastingApplication'
+          <Route path={'/CastingApplication'}
             element={
               <CastingApplication />
             }
           />
 
           {/* Contacts */}
-          <Route exact path='/contacts'
+          <Route path={'/contacts'}
             element={
               <Contacts />
             }
           />
 
           {/* Woman */}
-          <Route exact path='/woman'
+          <Route path={'/woman'}
             element={
               <Woman selectedWoman={selectedWoman} />
             }
           />
 
         </Routes>
-
-
       </BrowserRouter>
       <Footer />
-
     </>
   );
+
 }
 
 export default App;
