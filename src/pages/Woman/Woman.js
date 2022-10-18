@@ -15,6 +15,7 @@ function Woman({ selectedWoman }) {
   const hips = selectedWoman.parameter.hips;
   const nationality = selectedWoman.nationality;
   const instagram = selectedWoman.instagram;
+  const text = selectedWoman.text;
 
   return (
     <section className='page-woman'>
@@ -75,7 +76,9 @@ function Woman({ selectedWoman }) {
             selectedWoman.photos.map((item, index) => {
               if (index % 2 === 0) {
                 return (
-                  <img key={index} className='page-woman__photo' src={item} />
+                  <div className='page-woman__photo-card'>
+                    <img key={index} className='page-woman__photo' src={item} />
+                  </div>
                 )
               }
             })
@@ -88,13 +91,21 @@ function Woman({ selectedWoman }) {
             selectedWoman.photos.map((item, index) => {
               if (index % 2 === 1) {
                 return (
-                  <img key={index} className='page-woman__photo' src={item} />
+                  <div className='page-woman__photo-card'>
+                    <img key={index} className='page-woman__photo' src={item} />
+                  </div>
                 )
               }
             })
 
           }
         </article>
+      </article>
+
+      {/* Обо мне */}
+      <article className='page-woman__about'>
+        <h2 className='page-woman__about-title'>About me</h2>
+        <p className='page-woman__about-text'>{text}</p>
       </article>
 
     </section>

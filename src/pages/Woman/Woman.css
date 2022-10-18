@@ -9,7 +9,6 @@
 .page-woman__title {
   text-transform: uppercase;
 }
- 
 
 .page-woman__description {
   min-height: 52px;
@@ -30,7 +29,7 @@
   color: #000;
 }
 
-.page-woman__icon{
+.page-woman__icon {
   max-width: 25px;
 }
 
@@ -49,9 +48,39 @@
   /* gap: 35px 0; */
 }
 
+.page-woman__photo-card {
+  overflow: hidden;
+  margin: 0 0 35px;
+}
+
 .page-woman__photo {
   width: 100%;
-  margin: 0 0 35px;
+  transition: 0.9s;
+}
+
+.page-woman__photo:hover {
+  transform: scale(1.15);
+}
+
+.page-woman__about {
+  width: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - (2 * 14%));
+}
+
+.page-woman__about-title {
+  color: #9f9f9f;
+}
+
+.page-woman__about-text {
+  color: #000;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1052px) {
@@ -74,6 +103,10 @@
   .page-woman__photos {
     padding: 0 10%;
   }
+
+  .page-woman__about {
+    width: calc(100% - (2 * 10%));
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 544px) {
@@ -92,6 +125,10 @@
 
   .page-woman__photo {
     margin: 0 0 25px;
+  }
+
+  .page-woman__about {
+    width: calc(100% - (2 * 5%));
   }
 }
 
