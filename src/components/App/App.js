@@ -9,7 +9,7 @@ import { Routes, BrowserRouter, Route } from "react-router-dom";
 import Home from '../../pages/Home/Home.js';
 import Women from '../../pages/Women/Women.js';
 import Woman from '../../pages/Woman/Woman.js';
-import Become_a_model from '../../pages/Become_a_model/Become_a_model.js';
+import CastingApplication from '../../pages/CastingApplication/CastingApplication.js';
 import Contacts from '../../pages/Contants/Contacts.js';
 import { ListOfWomen } from '../../utils/constants';
 
@@ -38,12 +38,10 @@ function App() {
             }
           />
 
-          {/* Become a model */}
-          <Route exact path='/become%20a%20model'
+          {/* CastingApplication */}
+          <Route exact path='/CastingApplication'
             element={
-              <Page title={'BECOME A MODEL'} >
-                <Become_a_model />
-              </Page>
+              <CastingApplication />
             }
           />
 
