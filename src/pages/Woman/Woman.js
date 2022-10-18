@@ -76,7 +76,7 @@ function Woman({ selectedWoman }) {
             selectedWoman.photos.map((item, index) => {
               if (index % 2 === 0) {
                 return (
-                  <div className='page-woman__photo-card'>
+                  <div key={index} className='page-woman__photo-card'>
                     <img key={index} className='page-woman__photo' src={item} />
                   </div>
                 )
@@ -91,7 +91,7 @@ function Woman({ selectedWoman }) {
             selectedWoman.photos.map((item, index) => {
               if (index % 2 === 1) {
                 return (
-                  <div className='page-woman__photo-card'>
+                  <div key={index} className='page-woman__photo-card'>
                     <img key={index} className='page-woman__photo' src={item} />
                   </div>
                 )

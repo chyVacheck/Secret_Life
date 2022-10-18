@@ -16,7 +16,7 @@ function Women({ setSelectedWoman }) {
         {ListOfWomen.map((item, index) => {
           return (
             <li key={index}>
-              <Woman setSelectedWoman={setSelectedWoman} woman={item}></Woman>
+              <Woman key={index} setSelectedWoman={setSelectedWoman} woman={item}></Woman>
             </li>
           )
         }
