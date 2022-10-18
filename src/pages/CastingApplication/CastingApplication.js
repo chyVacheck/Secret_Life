@@ -3,245 +3,293 @@ import Title from './../../components/Title/Title';
 
 function CastingApplication() {
   return (
-    <section className='сastingApplication'>
-      <Title>CastingApplication</Title>
+    <section className='сasting'>
+      <Title>Casting</Title>
+
       <form
         action="mail.php"
         method="post"
         name="form"
-        id="popup-form"
+        id="casting-form"
         noValidate
       >
-        {/* name */}
-        <div className="popup__field" id="popup__field-name">
-          <input
-            minLength="3"
-            maxLength="30"
-            name="name"
-            type="text"
-            required
-            placeholder="Имя"
-            className="popup__input"
-            id="popup-input-name"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-name-error-mesage"
-          ></span>
+        {/* name, second name, city */}
+        <div className="casting__group">
+          {/* name */}
+          <div className="casting__field" id="casting__fieldcasting__field-name">
+            <input
+              minLength="3"
+              maxLength="30"
+              name="name"
+              type="text"
+              required
+              placeholder="* first name"
+              className="casting__input"
+              id="casting-input-name"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-name-error-mesage"
+            ></span>
+          </div>
+
+          {/* second name */}
+          <div className="casting__field" id="casting__field-second-name">
+            <input
+              minLength="3"
+              maxLength="30"
+              name="secondName"
+              type="text"
+              required
+              placeholder="* second name"
+              className="casting__input"
+              id="casting-input-second-name"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-second-name-error-mesage"
+            ></span>
+          </div>
+
+          {/* city */}
+          <div className="casting__field" id="casting__field-city">
+            <input
+              minLength="3"
+              maxLength="30"
+              name="city"
+              type="text"
+              required
+              placeholder="* city"
+              className="casting__input"
+              id="casting-input-city"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-city-error-mesage"
+            ></span>
+          </div>
         </div>
 
-        {/* second name */}
-        <div className="popup__field" id="popup__field-second-name">
-          <input
-            minLength="3"
-            maxLength="30"
-            name="secondName"
-            type="text"
-            required
-            placeholder="Фамилия"
-            className="popup__input"
-            id="popup-input-second-name"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-second-name-error-mesage"
-          ></span>
+        {/* age, height */}
+        <div className="casting__group">
+          {/* age */}
+          <div className="casting__field" id="casting__field-age">
+            <input
+              min="15"
+              name="age"
+              type="number"
+              required
+              placeholder="* age"
+              className="casting__input"
+              id="casting-input-age"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-age-error-mesage"
+            ></span>
+          </div>
+
+          {/* height */}
+          <div className="casting__field" id="casting__field-height">
+            <input
+              min="120"
+              name="height"
+              type="number"
+              required
+              placeholder="* height"
+              className="casting__input"
+              id="casting-input-height"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-height-error-mesage"
+            ></span>
+          </div>
         </div>
 
-        {/* city */}
-        <div className="popup__field" id="popup__field-city">
-          <input
-            minLength="3"
-            maxLength="30"
-            name="city"
-            type="text"
-            required
-            placeholder="Город"
-            className="popup__input"
-            id="popup-input-city"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-city-error-mesage"
-          ></span>
+        {/* tel, instagram, email */}
+        <div className="casting__group">
+          {/* tel */}
+          <div className="casting__field" id="casting__field-tel">
+            <input
+              name="tel"
+              type="tel"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+              placeholder="* 0444618061"
+              className="casting__input"
+              id="casting-input-tel"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-number-error-mesage"
+            ></span>
+          </div>
+
+          {/* instagram */}
+          <div className="casting__field">
+            <input
+              name="instagram"
+              type="text"
+              placeholder="* instagram nickname"
+              className="casting__input"
+              id="casting-input-instagram-link"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-instagram-link-error-mesage"
+            ></span>
+          </div>
+
+          {/* email */}
+          <div className="casting__field" id="casting__field-email">
+            <input
+              minLength="5"
+              maxLength="35"
+              name="email"
+              type="email"
+              required
+              placeholder="* example@gmail.com"
+              className="casting__input"
+              id="casting-input-email"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-email-error-mesage"
+            ></span>
+          </div>
         </div>
 
-        {/* age */}
-        <div className="popup__field" id="popup__field-age">
-          <input
-            min="15"
-            name="age"
-            type="number"
-            required
-            placeholder="Возраст"
-            className="popup__input"
-            id="popup-input-age"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-age-error-mesage"
-          ></span>
+        {/* nationality, tatoo */}
+        <div className="casting__group">
+          {/* nationality */}
+          <div className="casting__field">
+            <input
+              name="nationality"
+              type="text"
+              placeholder="* Ukrainian"
+              className="casting__input"
+              id="casting-input-instagram-link"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-instagram-link-error-mesage"
+            ></span>
+          </div>
+
+          {/* tatoo */}
+          <div className="casting__field">
+            <input
+              name="tatoo"
+              type="text"
+              placeholder="* do you have any tatoo ?"
+              className="casting__input"
+              id="casting-input-instagram-link"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-instagram-link-error-mesage"
+            ></span>
+          </div>
         </div>
 
-        {/* height */}
-        <div className="popup__field" id="popup__field-height">
-          <input
-            min="120"
-            name="height"
-            type="number"
-            required
-            placeholder="Рост"
-            className="popup__input"
-            id="popup-input-height"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-height-error-mesage"
-          ></span>
-        </div>
+        {/* parameter */}
+        <div className="casting__group">
+          {/* bust */}
+          <div className="casting__field" id="casting__field-bust">
+            <input
+              min="20"
+              name="bust"
+              type="number"
+              required
+              placeholder="* bust"
+              className="casting__input"
+              id="casting-input-bust"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-bust-error-mesage"
+            ></span>
+          </div>
 
-        {/* bust */}
-        <div className="popup__field" id="popup__field-bust">
-          <input
-            min="20"
-            name="bust"
-            type="number"
-            required
-            placeholder="Грудь"
-            className="popup__input"
-            id="popup-input-bust"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-bust-error-mesage"
-          ></span>
-        </div>
+          {/* waist */}
+          <div className="casting__field" id="casting__field-waist">
+            <input
+              min="20"
+              name="waist"
+              type="number"
+              required
+              placeholder="* waist"
+              className="casting__input"
+              id="casting-input-waist"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-waist-error-mesage"
+            ></span>
+          </div>
 
-        {/* waist */}
-        <div className="popup__field" id="popup__field-waist">
-          <input
-            min="20"
-            name="waist"
-            type="number"
-            required
-            placeholder="Талия"
-            className="popup__input"
-            id="popup-input-waist"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-waist-error-mesage"
-          ></span>
-        </div>
-
-        {/* hips */}
-        <div className="popup__field" id="popup__field-hips">
-          <input
-            min={20}
-            name="hips"
-            type="number"
-            required
-            placeholder="Бедра"
-            className="popup__input"
-            id="popup-input-hips"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-hips-error-mesage"
-          ></span>
+          {/* hips */}
+          <div className="casting__field" id="casting__field-hips">
+            <input
+              min={20}
+              name="hips"
+              type="number"
+              required
+              placeholder="* hips"
+              className="casting__input"
+              id="casting-input-hips"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-hips-error-mesage"
+            ></span>
+          </div>
         </div>
 
         {/* photo */}
-        <div className="popup__field" id="popup__field-photo">
+        <div className="casting__field" id="casting__field-photo">
           <input
             name="photo"
             type="file"
             required
-            placeholder="Имя"
-            className="popup__input"
-            id="popup-input-photo"
+            value=''
+            className="casting__input"
+            id="casting-input-photo"
           />
           {/* error-mesage */}
           <span
-            className="popup__error-mesage"
-            id="popup-photo-error-mesage"
+            className="casting__error-mesage"
+            id="casting-photo-error-mesage"
           ></span>
         </div>
 
         {/* comment */}
-        <div className="popup__field" id="popup__field-comment">
+        <div className="casting__field" id="casting__field-comment">
           <input
             name="comment"
             type="text"
-            placeholder="Коментарий"
-            className="popup__input"
-            id="popup-input-comment"
+            placeholder="any comments"
+            className="casting__input"
+            id="casting-input-comment"
           />
           {/* error-mesage */}
           <span
-            className="popup__error-mesage"
-            id="popup-comment-error-mesage"
-          ></span>
-        </div>
-
-        {/* email */}
-        <div className="popup__field" id="popup__field-email">
-          <input
-            minLength="5"
-            maxLength="35"
-            name="email"
-            type="email"
-            required
-            placeholder="example@gmail.com"
-            className="popup__input"
-            id="popup-input-email"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-email-error-mesage"
-          ></span>
-        </div>
-
-        {/* tel */}
-        <div className="popup__field" id="popup__field-tel">
-          <input
-            name="tel"
-            type="tel"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            required
-            placeholder="0444618061"
-            className="popup__input"
-            id="popup-input-tel"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-number-error-mesage"
-          ></span>
-        </div>
-
-        {/* instagram-link */}
-        <div className="popup__field">
-          <input
-            name="instagramLink"
-            type="url"
-            placeholder="https://instagram.com/kuchuruk_tatyana"
-            className="popup__input"
-            id="popup-input-instagram-link"
-          />
-          {/* error-mesage */}
-          <span
-            className="popup__error-mesage"
-            id="popup-instagram-link-error-mesage"
+            className="casting__error-mesage"
+            id="casting-comment-error-mesage"
           ></span>
         </div>
 
@@ -249,8 +297,8 @@ function CastingApplication() {
         <button
           disabled
           type="submit"
-          id="popup-button-submit"
-          className="popup__submit-button popup__submit-button_invalid"
+          id="casting-button-submit"
+          className="casting__submit-button casting__submit-button_invalid"
         >
           Отправить заявку
         </button>
