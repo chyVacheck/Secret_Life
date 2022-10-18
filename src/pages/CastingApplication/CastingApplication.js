@@ -1,7 +1,12 @@
 import './CastingApplication.css';
 import Title from './../../components/Title/Title';
 
+import { FormValidator } from './../../components/FormValidator';
+import { form } from './../../utils/constants';
+
+
 function CastingApplication() {
+
   return (
     <section className='сasting'>
       <Title>Casting</Title>
@@ -13,7 +18,7 @@ function CastingApplication() {
         id="casting-form"
         noValidate
       >
-        {/* name, second name, city */}
+        {/* name, surname, city */}
         <div className="casting__group">
           {/* name */}
           <div className="casting__field" id="casting__fieldcasting__field-name">
@@ -34,7 +39,7 @@ function CastingApplication() {
             ></span>
           </div>
 
-          {/* second name */}
+          {/* surname */}
           <div className="casting__field" id="casting__field-second-name">
             <input
               minLength="3"
@@ -42,7 +47,7 @@ function CastingApplication() {
               name="secondName"
               type="text"
               required
-              placeholder="* second name"
+              placeholder="* surname"
               className="casting__input"
               id="casting-input-second-name"
             />
@@ -73,12 +78,52 @@ function CastingApplication() {
           </div>
         </div>
 
-        {/* age, height */}
+        {/* tel, email */}
+        <div className="casting__group">
+          {/* tel */}
+          <div className="casting__field" id="casting__field-tel">
+            <input
+              name="tel"
+              type="tel"
+              required
+              placeholder="* telefon"
+              className="casting__input"
+              id="casting-input-tel"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-number-error-mesage"
+            ></span>
+          </div>
+
+          {/* email */}
+          <div className="casting__field" id="casting__field-email">
+            <input
+              minLength="5"
+              maxLength="35"
+              name="email"
+              type="email"
+              required
+              placeholder="* email"
+              className="casting__input"
+              id="casting-input-email"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-email-error-mesage"
+            ></span>
+          </div>
+        </div>
+
+        {/* age, tatoo height */}
         <div className="casting__group">
           {/* age */}
           <div className="casting__field" id="casting__field-age">
             <input
               min="15"
+              max="80"
               name="age"
               type="number"
               required
@@ -93,10 +138,29 @@ function CastingApplication() {
             ></span>
           </div>
 
+          {/* tatoo */}
+          <div className="casting__field" id='casting__field-tatoo'>
+            <input
+              minLength="2"
+              maxLength="3"
+              name="tatoo"
+              required
+              type="text"
+              placeholder="* do you have tatoo ?"
+              className="casting__input"
+              id="casting-input-tatoo"
+            />
+            {/* error-mesage */}
+            <span
+              className="casting__error-mesage"
+              id="casting-tatoo-error-mesage"
+            ></span>
+          </div>
+
           {/* height */}
           <div className="casting__field" id="casting__field-height">
             <input
-              min="120"
+              min="110"
               name="height"
               type="number"
               required
@@ -112,70 +176,16 @@ function CastingApplication() {
           </div>
         </div>
 
-        {/* tel, instagram, email */}
-        <div className="casting__group">
-          {/* tel */}
-          <div className="casting__field" id="casting__field-tel">
-            <input
-              name="tel"
-              type="tel"
-              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-              required
-              placeholder="* 0444618061"
-              className="casting__input"
-              id="casting-input-tel"
-            />
-            {/* error-mesage */}
-            <span
-              className="casting__error-mesage"
-              id="casting-number-error-mesage"
-            ></span>
-          </div>
-
-          {/* instagram */}
-          <div className="casting__field">
-            <input
-              name="instagram"
-              type="text"
-              placeholder="* instagram nickname"
-              className="casting__input"
-              id="casting-input-instagram-link"
-            />
-            {/* error-mesage */}
-            <span
-              className="casting__error-mesage"
-              id="casting-instagram-link-error-mesage"
-            ></span>
-          </div>
-
-          {/* email */}
-          <div className="casting__field" id="casting__field-email">
-            <input
-              minLength="5"
-              maxLength="35"
-              name="email"
-              type="email"
-              required
-              placeholder="* example@gmail.com"
-              className="casting__input"
-              id="casting-input-email"
-            />
-            {/* error-mesage */}
-            <span
-              className="casting__error-mesage"
-              id="casting-email-error-mesage"
-            ></span>
-          </div>
-        </div>
-
-        {/* nationality, tatoo */}
+        {/* nationality, inst */}
         <div className="casting__group">
           {/* nationality */}
           <div className="casting__field">
             <input
+              required
+              minLength="4"
               name="nationality"
               type="text"
-              placeholder="* Ukrainian"
+              placeholder="* Nationality"
               className="casting__input"
               id="casting-input-instagram-link"
             />
@@ -186,12 +196,15 @@ function CastingApplication() {
             ></span>
           </div>
 
-          {/* tatoo */}
+          {/* inst */}
           <div className="casting__field">
             <input
-              name="tatoo"
+              required
+              minLength="4"
+              maxLength="35"
+              name="instagram"
               type="text"
-              placeholder="* do you have any tatoo ?"
+              placeholder="* inst"
               className="casting__input"
               id="casting-input-instagram-link"
             />
@@ -201,6 +214,7 @@ function CastingApplication() {
               id="casting-instagram-link-error-mesage"
             ></span>
           </div>
+
         </div>
 
         {/* parameter */}
@@ -209,6 +223,7 @@ function CastingApplication() {
           <div className="casting__field" id="casting__field-bust">
             <input
               min="20"
+              max="250"
               name="bust"
               type="number"
               required
@@ -227,6 +242,7 @@ function CastingApplication() {
           <div className="casting__field" id="casting__field-waist">
             <input
               min="20"
+              max="250"
               name="waist"
               type="number"
               required
@@ -244,7 +260,8 @@ function CastingApplication() {
           {/* hips */}
           <div className="casting__field" id="casting__field-hips">
             <input
-              min={20}
+              min="20"
+              max="250"
               name="hips"
               type="number"
               required
@@ -260,26 +277,9 @@ function CastingApplication() {
           </div>
         </div>
 
-        {/* photo */}
-        <div className="casting__field" id="casting__field-photo">
-          <input
-            name="photo"
-            type="file"
-            required
-            value=''
-            className="casting__input"
-            id="casting-input-photo"
-          />
-          {/* error-mesage */}
-          <span
-            className="casting__error-mesage"
-            id="casting-photo-error-mesage"
-          ></span>
-        </div>
-
         {/* comment */}
         <div className="casting__field" id="casting__field-comment">
-          <input
+          <textarea
             name="comment"
             type="text"
             placeholder="any comments"
@@ -304,7 +304,15 @@ function CastingApplication() {
         </button>
       </form>
     </section>
-  );
+  )
 }
+
+window.onload = function () {
+  const root = document.querySelector('#root');
+  const castingFormElement = root.querySelector('#casting-form');
+
+  const Castingform = new FormValidator(form, castingFormElement);
+  Castingform.enableValidation();
+};
 
 export default CastingApplication;
