@@ -4,7 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+
 logo.jpg
+logo192.png
+logo512.png
 
 # testing
 /coverage
