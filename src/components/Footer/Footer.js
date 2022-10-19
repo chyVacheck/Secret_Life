@@ -25,13 +25,13 @@ function Footer() {
           <ul className='footer__list'>
             {/* instagram */}
             <li className='footer__element-list'>
-              <a className='footer__link' href='https://www.instagram.com/kuchuruk_tatyana/'>
+              <a className='footer__link' href='https://instagram.com/luxurydatelife?igshid=YmMyMTA2M2Y='>
                 <img className='footer__link_icon' src={instagram} ></img>
               </a>
             </li>
             {/* telegram */}
             <li className='footer__element-list'>
-              <a className='footer__link' href='#'>
+              <a className='footer__link' href='https://t.me/secretlife7'>
                 <img className='footer__link_icon' src={telegram} ></img>
               </a>
             </li>

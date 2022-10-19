@@ -42,13 +42,13 @@ function Header() {
           <ul className='header__social-network-list'>
             {/* instagram */}
             <li className='header__social-network'>
-              <a className='header__link' href='https://www.instagram.com/kuchuruk_tatyana/'>
+              <a className='header__link' href='https://instagram.com/luxurydatelife?igshid=YmMyMTA2M2Y='>
                 <img className='header__link_icon' src={instagram} ></img>
               </a>
             </li>
             {/* telegram */}
             <li className='header__social-network'>
-              <a className='header__link' href='#'>
+              <a className='header__link' href='https://t.me/secretlife7'>
                 <img className='header__link_icon' src={telegram} ></img>
               </a>
             </li>
