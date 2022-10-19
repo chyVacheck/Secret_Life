@@ -282,6 +282,7 @@ function CastingApplication() {
           <textarea
             name="comment"
             type="text"
+            noValidate
             placeholder="any comments"
             className="casting__input"
             id="casting-input-comment"
