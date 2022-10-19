@@ -2,10 +2,14 @@ import './Woman.css';
 import React from "react";
 import Title from '../../components/Title/Title';
 
+import { allPhotos } from './../../utils/images.js';
+
+
 import Icon from '../../images/icon/instagram_grey.svg';
 
 function Woman({ selectedWoman }) {
 
+  const id = selectedWoman.id;
   const name = selectedWoman.firstName;
   const age = selectedWoman.age;
   const height = selectedWoman.height;
@@ -73,7 +77,7 @@ function Woman({ selectedWoman }) {
       <article className='page-woman__photos'>
         <article className='page-woman__column'>
           {
-            selectedWoman.photos.map((item, index) => {
+            allPhotos[id].map((item, index) => {
               if (index % 2 === 0) {
                 return (
                   <div key={index} className='page-woman__photo-card'>
@@ -88,7 +92,7 @@ function Woman({ selectedWoman }) {
 
         <article className='page-woman__column'>
           {
-            selectedWoman.photos.map((item, index) => {
+            allPhotos[id].map((item, index) => {
               if (index % 2 === 1) {
                 return (
                   <div key={index} className='page-woman__photo-card'>

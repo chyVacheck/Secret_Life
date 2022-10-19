@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import './Woman.css';
 
+import { allPhotos } from './../../utils/images';
+
 function Woman({ woman, setSelectedWoman }) {
 
-  const mainPhoto = woman.mainPhoto;
+  const mainPhoto = allPhotos[woman.id][0];
   const firstName = woman.firstName;
 
   function changeInfo() {

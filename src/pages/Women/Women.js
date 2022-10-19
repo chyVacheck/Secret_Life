@@ -13,10 +13,10 @@ function Women({ setSelectedWoman }) {
       </Title>
 
       <ul className='women__grid'>
-        {ListOfWomen.map((item, index) => {
+        {ListOfWomen.map((item) => {
           return (
-            <li key={index}>
-              <Woman key={index} setSelectedWoman={setSelectedWoman} woman={item}></Woman>
+            <li key={item.id}>
+              <Woman key={item.id} setSelectedWoman={setSelectedWoman} woman={item}></Woman>
             </li>
           )
         }
