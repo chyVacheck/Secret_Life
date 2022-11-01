@@ -78,8 +78,8 @@
 }
 
 .footer__link_icon:hover {
-  animation: 0.5s linear 0s normal none 1 running rotation;
-  -webkit-animation: 0.5s linear 0s normal none 1 running rotation;
+  animation: 1.5s linear 0s normal none 1 running rotation;
+  -webkit-animation: 1.5s linear 0s normal none 1 running rotation;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1052px) {
